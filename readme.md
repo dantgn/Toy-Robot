@@ -39,9 +39,9 @@ without changing the position of the robot.
 * `REPORT` will announce the X,Y and F of the robot.
 This can be in any form, but standard output is sufficient.
 
-* A robot that is not on the table can choose
+* A robot that is not on the table can choose 
 to ignore the `MOVE`, `LEFT`, `RIGHT` and `REPORT` commands.
-* Input can be from a file, or from standard input, as the developer chooses.
+* Take the input from a file with all the commands.
 * Provide test data to exercise the application.
 
 ## Constraints
@@ -87,13 +87,15 @@ The Toy Robot Challenge was originally formulated by [Jon Eaves](https://twitter
 
 ## Test the Robot
 
-There are different tests for testing the Robot which you can find in 'tests' folder.
+Rspec tests are allocated in 'spec' folder.
+
+There are several test files for testing the Robot which can be found in 'tests' folder.
 
 In order to use them please run:
 
 
 ```
-ruby robot.rb
+ruby lib/robot_game.rb
 ```
 
 You would be asked to choose one of the different tests, once you choose it, you will get the result from the instructions in the test.
